@@ -18,6 +18,12 @@
   align-items: flex-end;
 }
 
+.entry-container input {
+  width: 190%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
 .entry-container label {
   display: block;
 }
@@ -32,17 +38,16 @@
 .bottom textarea {
   padding: 8px;
   margin-bottom: 10px;
-  width: 65%;
+  width: 80%;
   height: 200px;
   box-sizing: border-box;
 }
 
 .bottom button {
-  position: absolute;
-  right: 297px;
-  bottom: -40px;
+  align-self: flex-end;
   background-color: rgb(76, 18, 110);
   color: white;
+  margin-right: 170px;
 }
 
 @media (max-width: 750px) {
