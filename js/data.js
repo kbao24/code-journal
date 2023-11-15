@@ -6,7 +6,6 @@ const data = {
   editing: null,
   nextEntryId: 1,
 };
-export default data;
 
 function saveData() {
   const jsonData = JSON.stringify(data);

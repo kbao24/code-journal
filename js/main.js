@@ -1,5 +1,5 @@
-import data from './data.js';
-// input event listener
+/* global data */
+
 document.addEventListener('DOMContentLoaded', function () {
   const photoURL = document.getElementById('photo-url');
   const imgPreview = document.querySelector('.entry-image');
@@ -27,9 +27,9 @@ entryForm.addEventListener('submit', function (event) {
     notes,
   };
 
-  data.nextEntryId++;
+  data.nextEntryId++; // increment
 
-  data.entries.unshift(formData);
+  data.entries.unshift(formData); // add to beginning of object
 
   const imgPreview = document.querySelector('.entry-image');
   imgPreview.src = 'images/placeholder-image-square.jpg';
